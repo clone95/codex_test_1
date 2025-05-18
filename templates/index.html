@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Agente Deterministico</title>
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('user-input').value;
+            const response = await fetch('/message', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message})
+            });
+            const data = await response.json();
+            document.getElementById('response').textContent = data.response;
+        }
+    </script>
+</head>
+<body>
+    <h1>Agente Deterministico</h1>
+    <input id="user-input" type="text" placeholder="Scrivi un messaggio">
+    <button onclick="sendMessage()">Invia</button>
+    <p id="response"></p>
+</body>
+</html>
