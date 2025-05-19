@@ -17,9 +17,17 @@
     </script>
 </head>
 <body>
-    <h1>Agente Deterministico</h1>
-    <input id="user-input" type="text" placeholder="Scrivi un messaggio">
+    <h1>Negozio di Frutta</h1>
+    <p>Comandi disponibili:</p>
+    <ul>
+        <li><code>mostra inventario</code></li>
+        <li><code>prezzo set &lt;frutto&gt; &lt;valore&gt;</code></li>
+        <li><code>compra &lt;frutto&gt; &lt;quantit&agrave;&gt;</code></li>
+        <li><code>vendi &lt;frutto&gt; &lt;quantit&agrave;&gt;</code></li>
+    </ul>
+    <input id="user-input" type="text" placeholder="Scrivi un comando">
     <button onclick="sendMessage()">Invia</button>
-    <p id="response"></p>
+    <pre id="response"></pre>
+
 </body>
 </html>

@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, jsonify
-from agent import DeterministicAgent
+from agent import FruitShopAgent
 
 app = Flask(__name__)
-agent = DeterministicAgent()
+agent = FruitShopAgent()
+
 
 @app.route("/")
 def index():
