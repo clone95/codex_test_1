@@ -28,18 +28,9 @@ La licenza sarà definita in seguito. Si consiglia di aggiungere una licenza pri
 
 ## Avvio dell'app di esempio
 
-Per eseguire l'applicazione locale che simula il negozio di frutta:
 
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
 
-Una volta avviato il server, apri il browser all'indirizzo `http://localhost:5000` e interagisci con l'agente tramite la pagina web.
-
-Comandi disponibili nell'interfaccia:
-
-- `mostra inventario` – elenca frutta, prezzi e quantità
-- `prezzo set <frutto> <valore>` – aggiorna il prezzo di un frutto
-- `compra <frutto> <quantità>` – acquista frutta dall'inventario
-- `vendi <frutto> <quantità>` – aggiungi frutta all'inventario

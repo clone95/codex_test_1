@@ -4,6 +4,7 @@ from agent import FruitShopAgent
 app = Flask(__name__)
 agent = FruitShopAgent()
 
+
 @app.route("/")
 def index():
     return render_template("index.html")

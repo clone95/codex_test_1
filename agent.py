@@ -68,3 +68,4 @@ class FruitShopAgent:
             return f"Hai venduto {qty} {fruit}."
 
         return "Comando sconosciuto."
+
